@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/binggraestyle.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+   
+    <title>빙그레</title>
+</head>
+<body>
+    <div class="top_ad">빙그레 식물성 바나나 우유 출시!</div>
+    <header>
+        <div class="binggrae_logo"><img src="./img/binggraeLogo.png"></div>
+        <div class="binggrae_category">
+            <ul>회사소개</ul>
+            <ul>제품소개</ul>
+            <ul>지속가능경영</ul>
+            <ul>투자정보</ul>
+            <ul>뉴스룸</ul>
+            <ul>고객센터</ul>
+        </div>
+    </header>
+    <nav>
+        <ul>
+           <li></li> 
+        </ul>
+    </nav>
+<section class="binggrae_main">
+   <!-- Swiper -->
+<div class="swiper binggraeSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
+    </div>
+    <div class="swiper-pagination binggrae_pagination"></div>
+  </div>
+</section>
+<div class="binggrae_search">
+ <div class="binggrae_input">
+    <input type="text" value="빙그레의 브랜드/제품/맛을 검색해 보세요."><button>search</button>
+ </div>
+ <div class="search_category">
+    <a href="">#요플레</a>
+    <a href="">#바나나맛우유</a>
+    <a href="">#아이스크림</a>
+    <a href="">#더단백</a>
+    <a href="">#아카페라</a>
+ </div>
+</div>
+<section class="binggrae_prd">
+  <span class="binggrae_prdTitle">행복한 빙그레의 맛!</span>
+  <div class="binggrae_prdList">
+    <ul>
+        <li><a href=""><img src="./img/prd3.png" alt="coffee"></a></li>
+        <li><span>커피</span></li>
+    </ul>
+    <ul>
+        <li><a href=""><img src="./img/prd1.png" alt="yogurt"></a></li>
+        <li><span>발효유</span></li>
+    </ul>
+    <ul>
+        <li><a href=""><img src="./img/prd2.png" alt="icecream"></a></li>
+        <li><span>아이스크림</span></li>
+    </ul>
+    <ul>
+        <li><a href=""><img src="./img/prd6.png" alt="snack"></a></li>
+        <li><span>스낵</span></li>
+    </ul>
+    <ul>
+        <li><a href=""><img src="./img/prd7.png" alt="goodfood"></a></li>
+        <li><span>건강지향</span></li>
+    </ul>
+    <ul>
+        <li><a href=""><img src="./img/prd5.png" alt="globalfood"></a></li>
+        <li><span>수출제품</span></li>
+    </ul>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+
+     var binggrae_swiper = new Swiper(".binggraeSwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: "fraction",
+      },
+
+    });
+   
+</script>
+</body>
+</html>
