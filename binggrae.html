@@ -31,30 +31,30 @@
         </ul>
     </nav>
 <section class="binggrae_main">
-   <!-- Swiper -->
+<!-- Swiper -->
 <div class="swiper binggraeSwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
-      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
-      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
-      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
-      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain1_1920x1000.jpg" alt="binggrae1"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain3_1920x1000.jpg" alt="binggrae2"></div>
+      <div class="swiper-slide"><img src="./img/binggraemain2_1920x1000.jpg" alt="binggrae3"></div>
     </div>
     <div class="swiper-pagination binggrae_pagination"></div>
   </div>
 </section>
-<div class="binggrae_search">
- <div class="binggrae_input">
-    <input type="text" value="빙그레의 브랜드/제품/맛을 검색해 보세요."><button>search</button>
+
+<div id="binggrae_searchCover">
+  <div class="binggrae_input">
+     <input type="text" placeholder="빙그레의 브랜드 / 제품명을 입력해주세요." id="binggrae_search">
+     <button class="binggrae_Btn">Search</button>
+  </div>
+  <div class="binggrae_textCover"></div>
  </div>
- <div class="search_category">
-    <a href="">#요플레</a>
-    <a href="">#바나나맛우유</a>
-    <a href="">#아이스크림</a>
-    <a href="">#더단백</a>
-    <a href="">#아카페라</a>
- </div>
-</div>
+
+ <section class="binggrae_best">
+      <span class="binggrae_prdTitle">Best</span>
+        <div class="binggreae_bestWrap"></div>
+  </section>
+
 <section class="binggrae_prd">
   <span class="binggrae_prdTitle">행복한 빙그레의 맛!</span>
   <div class="binggrae_prdList">
@@ -84,6 +84,14 @@
     </ul>
   </div>
 </section>
+
+
+
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
 
@@ -104,5 +112,7 @@
     });
    
 </script>
+
+<script src="./js/binggrae.js"></script>
 </body>
 </html>
