@@ -34,7 +34,19 @@ header{
 header.active{
 
   top:0px;
-  background-color: rgba(225,225,225,.6);
+  background-color: rgba(2,101,4,.9);
+
+}
+
+header.active .binggrae_category ul{
+
+  color:#eaeaea;
+
+}
+
+header.active .binggrae_category ul em{
+
+  background-color: #eaeaea;
 
 }
 
@@ -75,9 +87,26 @@ header.active{
 
 }
 
+.binggrae_category ul em{
+
+  position:relative;
+  bottom:0;
+  display:block;
+  width:0px;
+}
+
 .binggrae_category ul:hover{
 
-    color:#eaeaea;
+    color:#f00;
+
+}
+
+.binggrae_category ul:hover em{
+
+  width:100%;
+  height: 1px;
+  transition: 0.3s;
+  background-color: #f00;
 
 }
 
@@ -141,8 +170,8 @@ header.active{
 
 .binggrae_input #binggrae_search{
 
-  width: calc(100% - 500px);
-  height:50px;
+  width: calc(100% - 700px);
+  height:70px;
   border:1px solid green;
   border-radius: 50px;
   color:#ccc;
@@ -152,10 +181,11 @@ header.active{
 
 .binggrae_input .binggrae_Btn{
 
-  width:100px;
-  height:50px;
-  border-radius:30px;
+  width:120px;
+  height:60px;
+  text-align: center;
   border:none;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   background-color: green;
   color:#eaeaea;
   font-size:14px;
@@ -237,7 +267,7 @@ header.active{
 
 .binggreae_bestWrap{
 
-  width:100%;
+  /* width:100%; */
   height:100%;
   display: flex;
   align-items: center;
@@ -263,7 +293,7 @@ header.active{
 .best_sales{
 
   color:#fff;
-  background-color:rgb(255, 77, 0);
+  background-color:green;
   position: relative;
   left:0;
   top:0;
@@ -334,10 +364,30 @@ header.active{
 }
 
 
+.binggrae_banner{
+
+  width:100%;
+  height:300px;
+  padding: 100px 0;
+  margin:0 auto;
+  overflow: hidden;
+
+}
 
 
+.binggrae_banner a{
 
+  width:100%;
+  height:100%;
+  text-align: center;
+  float:left;
+  background-image: url(../img/binggrae_banner1.jpg);
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-size: cover;
+  background-color:  #e6bd00 ;
 
+}
 
 
 .binggrae_prd{
@@ -356,8 +406,10 @@ header.active{
 
    padding:10px 0px;
    font-size: 2em;
-   letter-spacing: 1px;
-   font-weight:900;
+   letter-spacing: -2px;
+   font-family: 'IBM Plex Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif KR', serif;
 
   }
 
@@ -425,3 +477,154 @@ header.active{
     font-size:17px;
 
   }
+
+
+.binggrae_video{
+
+  width:100%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+
+}
+
+.binggrae_brand{
+
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  padding: 80px 0;
+
+}
+
+.binggrae_brand span{
+
+ text-align: center;
+ display: block;
+ padding: 20px 0 50px;
+
+}
+
+.binggrae_brand .brand_list{
+
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap:wrap;
+
+}
+
+.binggrae_brand .brand_list ul{
+
+  width:250px;
+  height:200px;
+  margin: 20px;
+  border:1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.binggrae_brand .brand_list ul:hover{
+
+  box-shadow: 3px 3px 15px #ccc;
+}
+
+.binggrae_brand .brand_list ul img{
+
+  height:150px;
+  
+
+}
+
+
+footer{
+
+  width:100%;
+  padding: 50px 0px;
+  margin:0 auto;
+  background-color: #353535;
+
+}
+
+.binggrae_footer{
+
+ width:100%;
+ height:100%;
+ margin:0 auto;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.binggrae_footer ul{
+
+  padding: 30px 0px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.binggrae_footer .footer_logo img{
+
+  height:30px;
+
+}
+
+.binggrae_footer .footer_info{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+
+}
+
+.binggrae_footer .footer_info li{
+
+  padding: 10px;
+  
+
+}
+
+.binggrae_footer .footer_info li address{
+
+  color:#f4f4f4;
+  font-style:none;
+  padding: 3px 0;
+
+}
+
+.binggrae_footer .footer_info li a{
+
+  float:left;
+  color:#eaeaea;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 0px;
+  margin-right:10px;
+
+}
+
+.binggrae_footer .footer_info li a img{
+
+  width: 20px;
+  height: 20px;
+  margin:10px;
+
+}
+
+.binggrae_footer .footer_info li span{
+
+  color:#ccc;
+
+}
