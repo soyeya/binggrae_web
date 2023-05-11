@@ -22,12 +22,21 @@ ul li, ol li{list-style:none;}
 header{
 
     width: 100%;
-    height: 80px;
+    height: auto;
     display:flex;
+    flex-direction: column;
     background-color: transparent;
     position:fixed;
     top:40px;
     z-index:10000;
+    background-color: rgba(255,192,0,.8);
+
+}
+
+#binggrae_header{
+
+  display: flex;
+  align-items: center;
 
 }
 
@@ -68,6 +77,30 @@ header.active .binggrae_category ul em{
 
 }
 
+.mobile_menu{
+
+  position: absolute;
+  right:30px;
+  display:none;
+  margin:0 auto;
+  cursor: pointer;
+
+
+}
+
+.mobile_menu span{
+
+  background-color: #333;
+  width: 30px;
+  height: 3px;
+  text-align: center;
+  line-height: 3px;
+  display: block;
+  margin: 5px;
+  cursor: pointer;
+
+}
+
 .binggrae_category{
 
     display:flex;
@@ -80,10 +113,10 @@ header.active .binggrae_category ul em{
 
 .binggrae_category ul{
 
-    margin-right:40px;
     font-size: 15px;
     color:#333;
     cursor: default;
+    padding:20px;
 
 }
 
@@ -110,10 +143,81 @@ header.active .binggrae_category ul em{
 
 }
 
+nav{ 
+
+  width:100%;
+  height:0px;
+  display: flex;
+  justify-content:center;
+  opacity:0;
+  background-color: #f4f4f4;
+  position:relative;
+  z-index:10;
+
+}
+
+nav.active{
+
+  width:100%;
+  height:auto;
+  padding: 30px 0px;
+  transition: 0.8s;
+  opacity:1;
+
+}
+
+
+nav ul{
+
+  padding: 0 20px;
+  display: none;
+
+}
+
+nav.active ul{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mobile_category{
+
+  display: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px 0px;
+
+}
+
+nav ul li{
+
+  margin: 7px;
+
+}
+
+nav ul li a{
+
+  font-size: 13px;
+  font-weight: 300;
+  color:#333;
+  cursor: pointer;
+
+}
+
+nav ul li a:hover{
+
+  color:#eaeaea;
+
+}
+
+
 .binggrae_main{
 
     width: 100%;
     height: 800px;
+
 }
 
 .swiper {
@@ -170,6 +274,7 @@ header.active .binggrae_category ul em{
 
 .binggrae_input #binggrae_search{
 
+  min-width:300px;
   width: calc(100% - 700px);
   height:70px;
   border:1px solid green;
@@ -185,7 +290,9 @@ header.active .binggrae_category ul em{
   height:60px;
   text-align: center;
   border:none;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  /*clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);*/
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
   background-color: green;
   color:#eaeaea;
   font-size:14px;
@@ -394,6 +501,7 @@ header.active .binggrae_category ul em{
  
     width:100%;
     height:100%;
+    overflow: hidden;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -544,6 +652,32 @@ header.active .binggrae_category ul em{
 
 }
 
+.biggrae_top{
+
+  width:50px;
+  height:50px;
+  background-color: #ffc000;
+  margin:0 auto;
+  position:fixed;
+  z-index:1;
+  right:30px;
+  bottom:50px;
+  border-radius: 50%;
+
+
+}
+
+.biggrae_top a{
+
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  color:#fff;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
 
 footer{
 
@@ -626,5 +760,85 @@ footer{
 .binggrae_footer .footer_info li span{
 
   color:#ccc;
+
+}
+
+
+/*반응형*/
+
+@media screen and (max-width: 1080px) {
+
+header{
+
+  padding: 20px 0;
+  justify-content: space-between;
+
+}
+
+.binggrae_category{
+
+  display:none;
+
+}
+
+.mobile_menu{
+
+  display: block;
+
+}
+
+nav {
+
+  flex-wrap:wrap;
+  justify-content: center;
+  top: 20px;
+
+}
+
+nav ul{
+
+margin:15px 0px;
+text-align: center;
+
+}
+
+.mobile_category {
+
+  display: block;
+
+}
+
+nav ul li a{
+
+  font-size: 12px;
+
+}
+
+.binggrae_main{
+
+  height: 500px;
+
+}
+
+#binggrae_searchCover{
+
+  padding: 50px 0px 0px;
+
+}
+
+.binggrae_prdList {
+
+ justify-content: center;
+ flex-wrap:wrap;
+
+}
+
+.binggrae_prdTitle{
+
+  font-size: 17px;
+
+}
+
+
 
 }
