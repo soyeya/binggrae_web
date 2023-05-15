@@ -4,6 +4,7 @@
 html, body{margin:0;}
 div,h1,h2,h3,h4,h5,p{margin:0;}
 a{text-decoration: none;}
+a:visited{color:#000;}
 ul li, ol li{list-style:none;}
 /* :focus{outline: none;} */
 
@@ -26,7 +27,7 @@ header{
     display:flex;
     flex-direction: column;
     background-color: transparent;
-    position:fixed;
+    position: fixed;
     top:40px;
     z-index:10000;
     background-color: rgba(255,192,0,.8);
@@ -56,6 +57,12 @@ header.active .binggrae_category ul{
 header.active .binggrae_category ul em{
 
   background-color: #eaeaea;
+
+}
+
+header.active .binggrae_login a{
+
+  color:#eaeaea;
 
 }
 
@@ -190,6 +197,7 @@ nav.active ul{
   padding: 3px 0px;
 
 }
+
 
 nav ul li{
 
@@ -679,6 +687,11 @@ nav ul li a:hover{
 
 }
 
+.mobile_login{
+
+  display: none;
+}
+
 footer{
 
   width:100%;
@@ -811,6 +824,34 @@ text-align: center;
 nav ul li a{
 
   font-size: 12px;
+
+}
+
+.mobile_login{
+
+  position: fixed;
+  right:30px;
+  bottom:110px;
+  width:50px;
+  height:50px;
+  display: block;
+  background-color: #ccc;
+  border-radius: 50%;
+  float:left;
+  z-index:1;
+
+
+}
+
+.mobile_login a{
+
+  font-weight: normal;
+  font-size: 13px;
+  color:#333;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+
 
 }
 
